@@ -2,16 +2,9 @@ public class four {
     public static void main(String[] args) {
         String str = "Hello   How   are ";
 
-        int count = 0;
+        String arr[] = str.trim().split("\\s+");
 
-        for (int i = 0; i < str.length(); i++) {
-
-            if (str.charAt(i) != ' ' &&
-                    (i == 0 || str.charAt(i - 1) == ' ')) {
-                count++;
-            }
-        }
-
-        System.out.println(count);
+        System.out.println(arr.length);     
     }
 }
+
